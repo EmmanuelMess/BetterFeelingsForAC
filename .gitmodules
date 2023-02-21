@@ -1,0 +1,9 @@
+[submodule "Sensor-de-temperatura-y-humedad-DHT11-con-Arduino"]
+	path = Sensor-de-temperatura-y-humedad-DHT11-con-Arduino
+	url = https://github.com/proyectoTEOS/Sensor-de-temperatura-y-humedad-DHT11-con-Arduino
+[submodule "Raw-IR-decoder-for-Arduino"]
+	path = Raw-IR-decoder-for-Arduino
+	url = https://github.com/ToniA/Raw-IR-decoder-for-Arduino.git
+[submodule "BetterFeelingsForAC/src/arduino-heatpumpir"]
+	path = BetterFeelingsForAC/src/arduino-heatpumpir
+	url = https://github.com/ToniA/arduino-heatpumpir.git

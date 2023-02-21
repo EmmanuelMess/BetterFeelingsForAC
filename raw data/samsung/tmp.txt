@@ -1,0 +1,27 @@
+
+0  1  2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 17 18 19 20
+83,06,01,82,00,00,81,A2,17,3B,00,00,00,8C,00,1D,00,00,08,00,15
+00: Constant 0x83
+01: Constant 0x06
+02: first nibble is smart and dry mode temp adjustment, fin control, sleep?
+    second nibble is fan speed, sleep mode id
+03: Selected temperature
+04: always 00?
+05: turbo
+06: hour current
+07: minutes current
+08: fin direction and hours for timer off
+09: minutes for timer off
+10: hours for timer on
+11: ifeel and minutes for timer on
+12: sensed temp
+13: checksum xor of last 11 bytes (from 2)
+14: dimmer id, economy, sleep, quiet pressed button info
+15: a generic button id
+16: smart mode temp adjustment
+17: always 00?
+18: always 08?
+19: always 00?
+20: checksum xor of last 6 bytes (from 14)
+
+

@@ -98,7 +98,12 @@ void sendMessage() {
 	currentState.timeOfLastTemperatureMessage = secs();
 }
 
-// the loop function runs over and over again forever
+void printTemperature() {
+	Serial.print("Heat index ");
+	Serial.print(currentState.currentTemperature);
+	Serial.print("°C. ");
+}
+
 void loop() {
 	const double now = secs();
 
@@ -109,9 +114,7 @@ void loop() {
 	if(now - currentState.timeOfLastTemperatureMessage > TEMPERATURE_MESSAGE_INTERVAL) {
 		const sensorInfo info = getSensorInfo();
 		currentState.currentTemperature = heatIndex(info.temperature, info.humidity);
-		Serial.print("Heat index ");
-		Serial.print(currentState.currentTemperature);
-		Serial.print("°C. ");
+		printTemperature();
 
 		sendMessage();
 	}
